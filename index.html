@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Mayura 🎀</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(#fff1f9, #ffdce6);
+      color: #b52e68;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    img {
+      width: 200px;
+      margin-top: 30px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .heart {
+      font-size: 2rem;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); color: #ff7ea8; }
+      50% { transform: scale(1.1); color: #ff5594; }
+      100% { transform: scale(1); color: #ff7ea8; }
+    }
+
+    .cat-button {
+      margin-top: 30px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      animation: bounce 2s infinite;
+    }
+
+    .cat-button img {
+      width: 120px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .cat-button:hover img {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/Marie_aristocats.png" alt="Marie the Cat" />
+    <h1>สุขสันต์วันเกิด Mayura 🎂</h1>
+    <p>สุขสันต์วันเกิดรอบสุดท้าย ขอให้มีความสุขมากๆ<br>ขอให้พ่อกับแม่อยู่ด้วยนานๆ</p>
+    <p>รักและคิดถึง 💖</p>
+    <div class="heart">♡</div>
+
+    <button class="cat-button" onclick="alert('น่ารักเหมือนแมวมารีเลย :)')">
+      <img src="https://pngimg.com/uploads/aristocats/aristocats_PNG24.png" alt="Marie Button">
+    </button>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://archive.org/download/LouisArmstrongCantWeBeFriends/Louis%20Armstrong%20-%20Can%27t%20We%20Be%20Friends.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
